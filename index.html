@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>مجموعه تجاری پورشیخی</title>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'Vazirmatn', sans-serif;
+      background: linear-gradient(to bottom, #e7dfd8, #d2c2b4);
+      color: #3a312c;
+      text-align: center;
+      padding: 2rem;
+      overflow-x: hidden;
+    }
+    .logo { max-width: 130px; margin: 0 auto 1.5rem; animation: shine 2s infinite; }
+    @keyframes shine { 0%{filter:brightness(1);}50%{filter:brightness(1.3);}100%{filter:brightness(1);} }
+    h1 { font-size: 2.6rem; margin-bottom: 0.3rem; color: #3a312c; text-shadow:1px1px2px rgba(0,0,0,0.08); }
+    .tagline { font-size:1.2rem; color:#5e5147; margin-bottom:2.5rem; }
+    .btn {
+      display:block; width:240px; margin:1.2rem auto; padding:1rem;
+      border-radius:12px; color:#3a312c; text-decoration:none; font-weight:bold;
+      background:linear-gradient(145deg,#e4d8ce,#f8f5f2);
+      box-shadow:0 4px 15px rgba(90,70,50,0.2);
+      border:1px solid #b29f91; transition:all 0.3s ease;
+      font-size:1.05rem; position:relative; overflow:hidden;
+    }
+    .btn:hover { background:#b29f91; color:#fff; transform:translateY(-2px) scale(1.02); box-shadow:0 6px 18px rgba(100,80,60,0.4); }
+    .branches { margin-top:3rem; text-align:center; max-width:700px; margin-left:auto; margin-right:auto; }
+    .branch {
+      background:#f8f5f2; border:1px solid #e3dcd5; border-radius:14px;
+      padding:1.5rem; margin-bottom:1.5rem; box-shadow:0 3px 10px rgba(60,50,40,0.08);
+      transition:all 0.3s ease; position:relative; cursor:pointer;
+    }
+    .branch:hover { box-shadow:0 5px 20px rgba(100,80,60,0.25); transform:translateY(-3px); }
+    .branch-title { font-weight:bold; margin-bottom:0.3rem; font-size:1.1rem; color:#3a312c; }
+    @media (max-width:500px) {
+      .btn { width:90%; font-size:1rem; }
+      .branch { padding:1rem; }
+    }
+  </style>
+</head>
+<body>
+  <img src="logo.png" alt="مجموعه تجاری پورشیخی" class="logo" />
+  <h1>مجموعه تجاری پورشیخی</h1>
+  <div class="tagline">مشتری مداری، کیفیت، اصالت</div>
+
+  <a class="btn" href="https://instagram.com/poursheykhi.comm" target="_blank">صفحه اینستاگرام</a>
+  <a class="btn" href="https://poursheykhi.com" target="_blank">وب‌سایت رسمی</a>
+
+  <div class="branches">
+    <h2 style="margin-bottom:1rem;color:#3a312c;">شعب ما</h2>
+
+    <div class="branch" onclick="window.open('https://www.google.com/maps/search/?api=1&query=31.3208373,48.6842898','_blank')">
+      <div class="branch-title">🏬 فروشگاه مرکزی</div>
+      <div>اهواز، سیمتری نبش خیابان اهوازیان</div>
+    </div>
+
+    <div class="branch" onclick="window.open('https://www.google.com/maps/search/?api=1&query=31.360261,48.702231','_blank')">
+      <div class="branch-title">🏢 شعبه کیانپارس</div>
+      <div>اهواز، کیانپارس، بلوار اصلی چمران، نبش خیابان سروش غربی</div>
+    </div>
+
+    <div class="branch" onclick="window.open('https://www.google.com/maps/search/?api=1&query=31.327113,48.690011','_blank')">
+      <div class="branch-title">🛏 خانه تشک  </div>
+      <div>اهواز، سیمتری نبش خیابان اهوازیان</div>
+    </div>
+
+    <div class="branch" onclick="window.open('https://www.google.com/maps/search/?api=1&query=31.360261,48.702231','_blank')">
+      <div class="branch-title">🛍 پارک سنتر</div>
+      <div>پارک سنتر، طبقه سوم، واحد ۳۱۹</div>
+    </div>
+
+  </div>
+</body>
+</html>
